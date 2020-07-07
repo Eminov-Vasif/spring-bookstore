@@ -28,6 +28,15 @@ public class Session {
     private Long id;
     @NotNull
     private String sessionId;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @OneToOne
     private User user;
     private LocalDateTime startTime;

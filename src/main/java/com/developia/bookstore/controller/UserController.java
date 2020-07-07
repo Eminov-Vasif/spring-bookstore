@@ -30,7 +30,7 @@ public class UserController {
     public String login(Model model, @RequestParam("username") String username,
                         @RequestParam("password") String password) {
         User user = userService.login(username, password);
-        return "welcome";
+        return "redirect:/home";
     }
 
     @GetMapping("/logout")

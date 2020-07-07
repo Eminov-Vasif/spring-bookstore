@@ -24,11 +24,37 @@ public class User {
     private Long id;
     @NotNull
     private String username;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
+    }
+
     private String password;
     private String confirmPassword;
     private String firstName;
     private String lastName;
     private String email;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     private String phone;
     @Enumerated(EnumType.STRING)
     private Role role;
